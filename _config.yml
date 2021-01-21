@@ -71,3 +71,5 @@ compress_html:
 
 sass:
   style:               compressed
+
+remote_theme : hydecorp-hydejack
