@@ -1,4 +1,4 @@
-## Welcome to capstone-2021-10 Page
+# Welcome to capstone-2021-10 Page
 
 ## Project Introduction
 초보 음악 연주자를 위해 음원을 분석하여 사용자에 음역대나, 연주 실력에 맞게 추천곡, 악보, 코드 진행 등 필요한 정보를 제공해주는 프로그램
