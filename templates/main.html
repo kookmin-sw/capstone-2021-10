@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Flask #2
+    </title>
+</head>
+<body>
+    <form method="POST" action="/getLink">
+        <h1> Flask 링크 입력~!~! </h1>
+        <h5> 무야호~!~!~! </h5>
+        <input type="text" name="link">
+        <button type="submit">그만큼 음원추출 하신거지~</button>
+    </form>
+    <div>
+        <p>
+            {% if link == None %}
+                <h5> 아무 링크도 입력이 안되었습니다. </h5>
+            {% else %}
+                <p>음원 추출 성공~! 서버에 추출된 음원이 저장되었습니다.</br></p>
+            {% endif %}
+        </p>
+    </div>
+</body>
+</html>
+
