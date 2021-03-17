@@ -1,8 +1,10 @@
+import spliter, os
 from flask import Flask, render_template, redirect, request, url_for
 from flask import send_from_directory
 from flask import send_file
+from werkzeug import secure_filename
 from pytube import YouTube
-import spliter
+
 
 app = Flask(__name__)
 
@@ -25,6 +27,18 @@ def getLink(link=None):
     else:
         temp = None
     return redirect(url_for('down', title=fileName))
+
+@app.route('/upload')
+def upload():
+    return render_template('upload.html')
+
+@app.route('/fileupload', methods=['GET','POST'])
+def upload_file():
+    if request.method == 'POST':
+        f = request.files['file']
+        f.save(secure_filename(f.filename))
+        fileName=spliter.split(f.filename)
+        return redirect(url_for('down', title=fileName)) 
 
 @app.route('/seperate_done/<title>')
 def down(title=None):

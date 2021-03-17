@@ -55,22 +55,14 @@
       <p class="title">
         Music spleeter: Take Out
       </p>
-        <form method="POST" action="/getLink">
-        <h4> paste youtube link of music you want to split</h4>
+        <form method="POST" action="http://localhost:5000/fileupload"
+              enctype="multipart/form-data">
+        <h4> upload your file you want to split</h4>
         <br>
-          <input type="text" name="link">
-        <button type="submit">muyaho!</button>
+          <input type="file" name="file">
+          <input type="submit"></input>
     </form>
       <br>
-    <div>
-        <p>
-            {% if link == None %}
-                <h5> 아직 아무 링크도 입력이 안되었습니다. </h5>
-            {% else %}
-                <p>음원 추출 성공~! 서버에 추출된 음원이 저장되었습니다.</br></p>
-            {% endif %}
-        </p>
-    </div>
     </div>
   </div>
 
@@ -80,8 +72,8 @@
       <div class="container">
         <ul>
           <li class="is-active"><a>Overview</a></li>
-          <li><a>youtubeLink</a></li>
-          <li><a>fileUpload</a></li>
+          <li><a>Modifiers</a></li>
+          <li><a>Grid</a></li>
           <li><a>Elements</a></li>
           <li><a>Components</a></li>
           <li><a>Layout</a></li>
