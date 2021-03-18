@@ -9,7 +9,8 @@ from pytube import YouTube
 app = Flask(__name__)
 
 TITLE = ""
-Thumb = ""
+THUMB = ""
+STEMS = 0
 @app.route('/')
 @app.route('/<link>')
 def inputTest(link=None):
@@ -21,9 +22,11 @@ def getLink(link=None):
         temp = 'succ'
         yt = YouTube(request.form['link'])
         yt.streams.filter(only_audio=True).first().download()
-        fileName = spliter.split(yt.title)
-        global Thumb
-        Thumb= yt.thumbnail_url
+        global THUMB
+        THUMB= yt.thumbnail_url
+        global STEAMS
+        STEAMS = request.form.get('steams')
+        fileName = spliter.split(yt.title,STEAMS)
     else:
         temp = None
     return redirect(url_for('down', title=fileName))
@@ -36,17 +39,19 @@ def upload():
 def upload_file():
     if request.method == 'POST':
         f = request.files['file']
-        f.save(secure_filename(f.filename))
-        fileName=spliter.split(f.filename)
-        return redirect(url_for('down', title=fileName)) 
+        f.save("./uploads/" + secure_filename(f.filename))
+        fileName=spliter.split(f.filename[:-4])
+        global STEAMS
+        STEAMS = request.form.get('steams')
+        return redirect(url_for('down', title=fileName))
 
 @app.route('/seperate_done/<title>')
 def down(title=None):
     fileName = title
     global TITLE
     TITLE = fileName
-    global Thumb
-    return render_template('download.html', fileName=fileName, thumb=Thumb)
+    global STEAMS, THUMB
+    return render_template('download.html', fileName=fileName, steams=STEAMS, thumb= THUMB)
 
 
 @app.route('/vocal_download')
@@ -56,7 +61,7 @@ def vocal_download():
     file_name = f"seperated_audio/{fileName}/vocals.wav"
     return send_file(file_name,
                       mimetype='wav',
-                      attachment_filename=f'{fileName}.wav',
+                      attachment_filename=f'{fileName}_vocal.wav',
                       as_attachment=True)
 
 @app.route('/bass_download')
@@ -66,7 +71,7 @@ def bass_download():
     file_name = f"seperated_audio/{fileName}/bass.wav"
     return send_file(file_name,
                       mimetype='wav',
-                      attachment_filename=f'{fileName}.wav',
+                      attachment_filename=f'{fileName}_bass.wav',
                       as_attachment=True)
 
 @app.route('/drum_download')
@@ -76,7 +81,7 @@ def drum_download():
     file_name = f"seperated_audio/{fileName}/drums.wav"
     return send_file(file_name,
                       mimetype='wav',
-                      attachment_filename=f'{fileName}.wav',
+                      attachment_filename=f'{fileName}_drum.wav',
                       as_attachment=True)
 @app.route('/others_download')
 def others_download():
@@ -85,8 +90,20 @@ def others_download():
     file_name = f"seperated_audio/{fileName}/other.wav"
     return send_file(file_name,
                       mimetype='wav',
-                      attachment_filename=f'{fileName}.wav',
+                      attachment_filename=f'{fileName}_others.wav',
                       as_attachment=True)
+
+@app.route('/piano_download')
+def piano_download():
+    global TITLE
+    fileName = TITLE
+    file_name = f"seperated_audio/{fileName}/piano.wav"
+    return send_file(file_name,
+                      mimetype='wav',
+                      attachment_filename=f'{fileName}_piano.wav',
+                      as_attachment=True)
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)

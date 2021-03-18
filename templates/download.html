@@ -50,6 +50,7 @@
   </div>
 
   <!-- Hero content: will be in the middle -->
+{%if steams == '4' %}
   <div class="hero-body">
     <div class="container has-text-centered">
       <p class="title">
@@ -78,6 +79,62 @@
       <br>
     </div>
   </div>
+ {% elif steams == '2' %}
+   <div class="hero-body">
+    <div class="container has-text-centered">
+      <p class="title">
+        Music spleeter: Take Out
+      </p>
+         <div class="print">
+             {% if True %}
+                <img src = "{{thumb}}" , width="400", height="400">
+             {% endif %}
+             </br>
+             {{fileName}}
+             <h3>Click buttons below to download seperated wav files!</h3>
+             <form method="get" action="/vocal_download">
+              <button type="submit">vocal</button>
+            </form>
+            <form method="get" action="/others_download">
+              <button type="submit">others</button>
+            </form>
+          </div>
+      <br>
+    </div>
+  </div>
+  {%elif steams == '5' %}
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <p class="title">
+          Music spleeter: Take Out
+        </p>
+           <div class="print">
+               {% if True %}
+                  <img src = "{{thumb}}" , width="400", height="400">
+               {% endif %}
+               </br>
+               {{fileName}}
+               <h3>Click buttons below to download seperated wav files!</h3>
+               <form method="get" action="/vocal_download">
+                <button type="submit">vocal</button>
+              </form>
+              <form method="get" action="/bass_download">
+                <button type="submit">bass</button>
+              </form>
+              <form method="get" action="/drum_download">
+                <button type="submit">drum</button>
+              </form>
+              <form method="get" action="/piano_download">
+                <button type="submit">piano</button>
+              </form>
+              <form method="get" action="/others_download">
+                <button type="submit">others</button>
+              </form>
+            </div>
+        <br>
+      </div>
+    </div>
+{% endif %}
 
   <!-- Hero footer: will stick at the bottom -->
   <div class="hero-foot">
