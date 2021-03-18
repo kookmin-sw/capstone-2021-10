@@ -37,7 +37,7 @@ def upload_file():
     if request.method == 'POST':
         f = request.files['file']
         f.save(secure_filename(f.filename))
-        fileName=spliter.split(f.filename)
+        fileName=spliter.split(f.filename[:-4])
         return redirect(url_for('down', title=fileName)) 
 
 @app.route('/seperate_done/<title>')
