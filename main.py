@@ -39,11 +39,17 @@ def upload():
 def upload_file():
     if request.method == 'POST':
         f = request.files['file']
+<<<<<<< HEAD
         f.save("./uploads/" + secure_filename(f.filename))
         fileName=spliter.split(f.filename[:-4])
         global STEAMS
         STEAMS = request.form.get('steams')
         return redirect(url_for('down', title=fileName))
+=======
+        f.save(secure_filename(f.filename))
+        fileName=spliter.split(f.filename[:-4])
+        return redirect(url_for('down', title=fileName)) 
+>>>>>>> d1b50a754a811c99a039d3fe155af47136db0559
 
 @app.route('/seperate_done/<title>')
 def down(title=None):
