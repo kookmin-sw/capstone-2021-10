@@ -9,4 +9,3 @@ def split(fileName, stem = 4):
 
 if __name__ == '__main__':
     print(split('[직캠] 백예린(Baek Yerin) - Square'))
-
