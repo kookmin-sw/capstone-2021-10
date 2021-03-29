@@ -1,51 +1,30 @@
 [![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=352765&assignment_repo_type=GroupAssignmentRepo)
-# Welcome to GitHub
+### Take_Out
+![logo_image](./img/logo.png)
 
-캡스톤 팀 생성을 축하합니다.
+## Project Introduction
 
-## 팀소개 및 페이지를 꾸며주세요.
+초보 음악 연주자를 위해 음원을 분석하여 사용자에 음역대나, 연주 실력에 맞게 추천곡, 악보, 코드 진행 등 필요한 정보를 제공해주는 프로그램
 
-- 프로젝트 소개
-  - 프로젝트 설치방법 및 데모, 사용방법, 프리뷰등을 readme.md에 작성.
-  - Api나 사용방법등 내용이 많을경우 wiki에 꾸미고 링크 추가.
+## Abstract
 
-- 팀페이지 꾸미기
-  - 프로젝트 소개 및 팀원 소개
-  - index.md 예시보고 수정.
 
-- GitHub Pages 리파지토리 Settings > Options > GitHub Pages 
-  - Source를 marster branch
-  - Theme Chooser에서 태마선택
-  - 수정후 팀페이지 확인하여 점검.
+## Memders
+20153218 이효성
+
+20151142 유정현
+
+20163102 김초혜
+
+20171673 이윤서
 
 **팀페이지 주소** https://kookmin-sw.github.io/capstone-2021-10/
 
 
-## 내용에 아래와 같은 내용들을 추가하세요.
+##소개 영상
 
-### 1. 프로잭트 소개
 
-초보 음악 연주자를 위해
-음원을 분석하여 사용자에 음역대나, 연주 실력에 맞게
-추천곡, 악보, 코드 진행 등
-필요한 정보를 제공해주는 프로그램
-
-### 2. 소개 영상
-
-프로젝트 소개하는 영상을 추가하세요
-
-### 3. 팀 소개
-
-10조
-
-20153218 이효성
-20151142 유정현
-20163102 김초혜
-20171673 이윤서
-
-팀원정보 및 담당이나 사진 및 SNS를 이용하여 소개하세요.
-
-### 4. 사용법
+###4. 사용법
 
 소스코드제출시 설치법이나 사용법을 작성하세요.
 
@@ -53,23 +32,6 @@
 
 추가적인 내용은 자유롭게 작성하세요.
 
-
-## Markdown을 사용하여 내용꾸미기
-
-Markdown은 작문을 스타일링하기위한 가볍고 사용하기 쉬운 구문입니다. 여기에는 다음을위한 규칙이 포함됩니다.
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
 
 **Bold** and _Italic_ and `Code` text
 
