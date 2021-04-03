@@ -34,31 +34,31 @@ This project is a webapplication that recommends songs that suit the performers'
 
 ### 4. Members
 
-이효성
+김초혜
 ```
-Student ID :
-E-mail :
+Student ID : 20163102
+E-mail : inakplace6666@gmail.com
 Role :
 ```
 
 유정현
 ```
-Student ID :
-E-mail :
-Role :
-```
-
-김초혜
-```
-Student ID :
-E-mail :
+Student ID : 20151142
+E-mail : dbwjdgus0@kookmin.ac.kr
 Role :
 ```
 
 이윤서
 ```
-Student ID :
-E-mail :
+Student ID : 20171673
+E-mail : westyun1997@gmail.com
+Role :
+```
+
+이효성
+```
+Student ID : 20153218
+E-mail : lho2046@gmail.com
 Role :
 ```
 
@@ -82,9 +82,4 @@ Role :
 ---
 
 
-### 7. 
-
-
-
-
-
+### 7.
