@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Takeout | capstone-2021-10</title>
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="Takeout" />
 <meta property="og:locale" content="en_US" />
