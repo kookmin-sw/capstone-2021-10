@@ -21,17 +21,6 @@
     <div class="wrapper">
       <header>
         <h1><a href="https://kookmin-sw.github.io/capstone-2021-10/">capstone-2021-10</a></h1>
-
-        <p>Takeout - 초보 연주자를 위한 음원 추출, 음악 추천 프로그램 </p>
-
-
-        <p class="view"><a href="https://github.com/kookmin-sw/capstone-2021-10">View the Project on GitHub <small>kookmin-sw/capstone-2021-10</small></a></p>
-
-
-      </header>
-      <section>
-
-      <h2 id="Takeout">Takeout</h2>
 <p><img src="https://user-images.githubusercontent.com/28581786/113264752-4916fa80-930e-11eb-868d-557c47967550.png" width="200" height="200" /></p>
 
 <h3 id="팀페이지-주소">팀페이지 주소</h3>
