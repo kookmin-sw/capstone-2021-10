@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="../css/landing.css">
+    <link rel="stylesheet" href="style.css">
 
     
 
@@ -23,7 +24,7 @@
             <div class="container">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="../">
-                        <img src="http://bulma.io/images/bulma-type-white.png" alt="Logo">
+                        <img src="takeout_logo_main.png" alt="Logo">
                     </a>
                     <span class="navbar-burger burger" data-target="navbarMenu">
                         <span></span>
@@ -34,23 +35,23 @@
                 <div id="navbarMenu" class="navbar-menu is-active">
                     <div class="navbar-end">
                       <span class="navbar-item">
-                        <a class="button is-white is-outlined is-rounded" href="/">
+                        <a class="button is-black is-outlined is-rounded" href="/">
                             <span>youtubeLink</span>
                         </a>
                     </span>
                     <span class="navbar-item">
-                        <a class="button is-white is-outlined is-rounded" href="/upload">
+                        <a class="button is-black is-outlined is-rounded" href="/upload">
                             <span>audioFile</span>
                         </a>
                     </span>
                         <span class="navbar-item">
-                            <a class="button is-white is-outlined is-rounded" href="#">
-                                <span>Documentation</span>
+                            <a class="button is-black is-outlined is-rounded" href="#">
+                                <span>library</span>
                             </a>
                         </span>
                         <span class="navbar-item">
-                            <a class="button is-white is-outlined is-rounded" href="#">
-                                <span>View Source</span>
+                            <a class="button is-black is-outlined is-rounded" href="#">
+                                <span>login</span>
                             </a>
                         </span>
                     </div>
@@ -64,9 +65,9 @@
   {%if stems == "4" %}
   <div class="hero-body">
     <div class="container has-text-centered">
-      <p class="title">
+      <h1 class="title" style="color: black">
         Music spleeter: Take Out
-      </p>
+      </h1>
          <div class="print">
              {% if True %}
               <img src = "{{thumb}}" , width="400", height="400">
@@ -75,10 +76,10 @@
              {{fileName}}
             <h3>Click buttons below to download seperated wav files!</h3>
             <form method="POST" action="/download">
-              <input type="submit" class="button is-info is-rounded" name="source" value="vocals">
-              <input type="submit" class="button is-info is-rounded" name="source" value="bass">
-              <input type="submit" class="button is-info is-rounded" name="source" value="drums">
-              <input type="submit" class="button is-info is-rounded" name="source" value="other">
+              <input type="submit" class="button is-black is-rounded" name="source" value="vocals">
+              <input type="submit" class="button is-black is-rounded" name="source" value="bass">
+              <input type="submit" class="button is-black is-rounded" name="source" value="drums">
+              <input type="submit" class="button is-black is-rounded" name="source" value="other">
             </form>
           </div>
       <br>
@@ -87,9 +88,9 @@
  {% elif stems == "2" %}
    <div class="hero-body">
     <div class="container has-text-centered">
-      <p class="title">
+      <h1 class="title" style="color: black">
         Music spleeter: Take Out
-      </p>
+      </h1>
          <div class="print">
              {% if True %}
                 <img src = "{{thumb}}" , width="400", height="400">
@@ -98,8 +99,8 @@
              {{fileName}}
              <h3>Click buttons below to download seperated wav files!</h3>
              <form method="POST" action="/download">
-              <input type="submit" class="button is-info is-rounded" name="source" value="vocals">
-              <input type="submit" class="button is-info is-rounded" name="source" value="accompaniment">
+              <input type="submit" class="button is-black is-rounded" name="source" value="vocals">
+              <input type="submit" class="button is-black is-rounded" name="source" value="MR">
             </form>
           </div>
       <br>
@@ -108,9 +109,9 @@
   {%elif stems == "5" %}
     <div class="hero-body">
       <div class="container has-text-centered">
-        <p class="title">
+        <h1 class="title" style="color: black">
           Music spleeter: Take Out
-        </p>
+        </h1>
            <div class="print">
                {% if True %}
                 <img src = "{{thumb}}" , width="400", height="400">
@@ -119,11 +120,11 @@
                {{fileName}}
               <h3>Click buttons below to download seperated wav files!</h3>
               <form method="POST" action="/download">
-                <input type="submit" class="button is-info is-rounded" name="source" value="vocals">
-                <input type="submit" class="button is-info is-rounded" name="source" value="bass">
-                <input type="submit" class="button is-info is-rounded" name="source" value="drums">
-                <input type="submit" class="button is-info is-rounded" name="source" value="piano">
-                <input type="submit" class="button is-info is-rounded" name="source" value="other">
+                <input type="submit" class="button is-black is-rounded" name="source" value="vocals">
+                <input type="submit" class="button is-black is-rounded" name="source" value="bass">
+                <input type="submit" class="button is-black is-rounded" name="source" value="drums">
+                <input type="submit" class="button is-black is-rounded" name="source" value="piano">
+                <input type="submit" class="button is-black is-rounded" name="source" value="other">
               </form>
             </div>
         <br>

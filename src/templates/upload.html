@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="../css/landing.css">
+    <link rel="stylesheet" href="style.css">
 
     
 
@@ -23,7 +24,7 @@
             <div class="container">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="../">
-                        <img src="http://bulma.io/images/bulma-type-white.png" alt="Logo">
+                        <img src="takeout_logo_main.png" alt="Logo">
                     </a>
                     <span class="navbar-burger burger" data-target="navbarMenu">
                         <span></span>
@@ -34,23 +35,23 @@
                 <div id="navbarMenu" class="navbar-menu is-active">
                     <div class="navbar-end">
                       <span class="navbar-item">
-                        <a class="button is-white is-outlined is-rounded" href="/">
+                        <a class="button is-black is-outlined is-rounded" href="/">
                             <span>youtubeLink</span>
                         </a>
                     </span>
                     <span class="navbar-item">
-                        <a class="button is-white is-outlined is-rounded" href="/upload">
+                        <a class="button is-black is-outlined is-rounded" href="/upload">
                             <span>audioFile</span>
                         </a>
                     </span>
                         <span class="navbar-item">
-                            <a class="button is-white is-outlined is-rounded" href="#">
-                                <span>Documentation</span>
+                            <a class="button is-black is-outlined is-rounded" href="#">
+                                <span>community</span>
                             </a>
                         </span>
                         <span class="navbar-item">
-                            <a class="button is-white is-outlined is-rounded" href="#">
-                                <span>View Source</span>
+                            <a class="button is-black is-outlined is-rounded" href="#">
+                                <span>login</span>
                             </a>
                         </span>
                     </div>
@@ -62,21 +63,61 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         <div class="column is-6 is-offset-3">
-        <p class="title">
+        <h1 class="title" style="color: black">
           Music spleeter: Take Out
-        </p>
+        </h1>
           <form method="POST" action="/fileupload"
                 enctype="multipart/form-data">
-          <h4> upload your file you want to split</h4>
+          <h3 class="subtitle" style="color: black"> 
+            upload your file you want to split
+          </h3>
           <div class="box">
             <div class="field is-grouped">
-              <select name="stems">
-                <option value="2" >2stem</option>
-                <option value="4"selected="selected">4stem</option>
-                <option value="5">5stem</option>
-              </select>
-              <input type="file" name="file" >
-              <input type="submit"></input>
+              <p class="select is-rounded is-black"> 
+                <select name="stems">
+                  <option value="2" >2stem</option>
+                  <option value="4"selected="selected">4stem</option>
+                  <option value="5">5stem</option>
+                </select>
+              </p>
+              <div id="file-js-example" class="file has-name">
+                <label class="file-label">
+                  <input class="file-input" type="file" name="resume">
+                  <span class="file-cta">
+                    <span class="file-icon">
+                      <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">
+                      Choose a file…
+                    </span>
+                  </span>
+                  <span class="file-name">
+                    No file uploaded
+                  </span>
+                </label>
+              </div>
+              
+              <script>
+                const fileInput = document.querySelector('#file-js-example input[type=file]');
+                fileInput.onchange = () => {
+                  if (fileInput.files.length > 0) {
+                    const fileName = document.querySelector('#file-js-example .file-name');
+                    fileName.textContent = fileInput.files[0].name;
+                  }
+                }
+              </script>
+              
+              <p class="control">
+                <script>
+                    function toLoading() {
+                        document.getElementById("order").className = "button is-info is-loading is-rounded";
+                        document.getElementById("proBar").innerHTML = "<progress class='progress is-medium is-info' max='100'>60%</progress>"
+                    }
+                </script>
+                <button id="order" class="button is-black is-rounded" onclick="toLoading()">
+                    ORDER!
+                </button>
+            </p>
             </div>
           </div>
           </form> 

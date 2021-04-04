@@ -1,0 +1,32 @@
+div.hero-body
+{
+    background-image: url("white_background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 1.0;
+}
+div.hero-head
+{
+    background-image: url("white_background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 1.0;
+}
+div.hero-foot
+{
+    background-image: url("white_background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 1.0;
+}
+
+div.box
+{
+    background-color: white;
+}
