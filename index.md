@@ -16,13 +16,13 @@
 <p><img src="https://user-images.githubusercontent.com/28581786/113264752-4916fa80-930e-11eb-868d-557c47967550.png" width="600" height="400" /></p>
 
 <h3 id="팀페이지-주소">팀페이지 주소</h3>
-<p>(https://kookmin-sw.github.io/capstone-2021-10/)</p>
+https://kookmin-sw.github.io/capstone-2021-10/
 
 
 
 <h2 id="1.프로젝트 소개">1. 프로젝트소개</h2>
 <p>
-Take + Out = 음악에서 원하는 소리만 포장해가다
+Take + Out = 음악에서 원하는 소리만 포장해가다.
 <br>
 첫 단추부터 잘 끼워야 한다는 말이 있듯이 음악을 처음 연주하는 사람들에게 중요한 것은 '어떤 곡을 연주하느냐' 일 것입니다.
 초보 연주자가 어려운 곡, 난이도가 높은 곡을 선곡하여 연주를 실패했을 때 연습에 들어간 시간과 자신감 하락은 자신의 몫으로 돌아가는데,
@@ -88,3 +88,4 @@ stem 설정을 하면 원하는대로 다운받을 수 있게 제공합니다.
 
 
 <h2 id="5. Data Flow Diagram">6. Data Flow Diagram</h2>
+<p><img src="https://raw.githubusercontent.com/kookmin-sw/capstone-2021-10/master/image/Data%20flow%20diagram.png" width="600" height="700" /></p>
