@@ -72,4 +72,4 @@ Role :
 
 
 ### 5. Data Flow Diagram
-<p><img src="https://raw.githubusercontent.com/kookmin-sw/capstone-2021-10/master/image/Data%20flow%20diagram.png" width="800" /></p>
+<p><img src="https://raw.githubusercontent.com/kookmin-sw/capstone-2021-10/master/UIUX/Data%20flow%20diagram.png" width="800" /></p>
