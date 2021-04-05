@@ -13,7 +13,7 @@
     <div class="wrapper">
       <header>
         <h1><a href="https://kookmin-sw.github.io/capstone-2021-10/">Takeout</a></h1>
-<p><img src="https://user-images.githubusercontent.com/28581786/113264752-4916fa80-930e-11eb-868d-557c47967550.png" width="600" height="400" /></p>
+<p><img src="https://user-images.githubusercontent.com/28581786/113264752-4916fa80-930e-11eb-868d-557c47967550.png" width="600" /></p>
 
 <h3 id="팀페이지-주소">팀페이지 주소</h3>
 https://kookmin-sw.github.io/capstone-2021-10/
@@ -86,6 +86,5 @@ stem 설정을 하면 원하는대로 다운받을 수 있게 제공합니다.
 </code></pre></div></div>
 
 
-
 <h2 id="5. Data Flow Diagram">6. Data Flow Diagram</h2>
-<p><img src="https://raw.githubusercontent.com/kookmin-sw/capstone-2021-10/master/image/Data%20flow%20diagram.png" width="600" height="700" /></p>
+<p><img src="https://raw.githubusercontent.com/kookmin-sw/capstone-2021-10/master/image/Data%20flow%20diagram.png" width="800" /></p>
