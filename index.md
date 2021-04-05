@@ -87,4 +87,4 @@ stem 설정을 하면 원하는대로 다운받을 수 있게 제공합니다.
 
 
 <h2 id="5. Data Flow Diagram">6. Data Flow Diagram</h2>
-<p><img src="https://raw.githubusercontent.com/kookmin-sw/capstone-2021-10/master/image/Data%20flow%20diagram.png" width="800" /></p>
+<p><img src="https://raw.githubusercontent.com/kookmin-sw/capstone-2021-10/master/UIUX/Data%20flow%20diagram.png" width="800" /></p>
