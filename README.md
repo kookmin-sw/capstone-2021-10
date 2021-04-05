@@ -10,9 +10,7 @@
 
 ### 2. Project Introduction
 
-Take : 간편하게 가지고 나가다.
-
-out : 기존 음원에서 원하는 부분을 꺼내다.
+Take + Out = 음악에서 원하는 소리만 포장해가다.
 
 첫 단추부터 잘 끼워야 한다는 말이 있듯이 음악을 처음 연주하는 사람들에게 중요한 것은 '어떤 곡을 연주하느냐' 일 것입니다.
 초보 연주자가 어려운 곡, 난이도가 높은 곡을 선곡하여 연주를 실패했을 때 연습에 들어간 시간과 자신감 하락은 자신의 몫으로 돌아가는데,
@@ -62,19 +60,10 @@ E-mail : lho2046@gmail.com
 Role :
 ```
 
-
 ---
 
 
-### 5. Introduction Video
-
-![introduce_video](./UIUX/introduce_video.mp4)
-
-
----
-
-
-### 6. How To Use
+### 4. How To Use
 
 사용법은 매우 간단합니다. 연주하고자 하는 곡의 음원 유튜브 링크 또는 음원 파일을 업로드하고 stem 설정을 하면 원하는대로 다운받을 수 있게 제공합니다. 회원 가입 / 로그인을 통해 이전에 했던 음원 추출 기록을 조회할 수도 있고 유저들의 난이도 평가를 통해 비슷한 난이도의 곡을 추천받아서 연습할 수도 있습니다.
 
@@ -82,4 +71,5 @@ Role :
 ---
 
 
-### 7.
+### 5. Data Flow Diagram
+<p><img src="https://raw.githubusercontent.com/kookmin-sw/capstone-2021-10/master/image/Data%20flow%20diagram.png" width="600" height="700" /></p>
