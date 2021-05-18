@@ -3,9 +3,9 @@ import time
 from flask import Flask, render_template, redirect, request, url_for
 from flask import send_from_directory
 from flask import send_file
-from werkzeug import secure_filename
+from werkzeug.utils import secure_filename
 from pytube import YouTube
-
+# from youtubesearchpython import Search
 
 app = Flask(__name__)
 
@@ -16,6 +16,10 @@ STEMS = ""
 @app.route('/<link>')
 def inputTest(link=None):
     return render_template('main.html', link=link)
+
+@app.route('/upload')
+def upload():
+    return render_template('upload.html')
 
 @app.route('/getLink', methods=['POST'])
 def getLink(link=None):
@@ -32,20 +36,20 @@ def getLink(link=None):
         temp = None
     return redirect(url_for('down', title=fileName))
 
-@app.route('/upload')
-def upload():
-    return render_template('upload.html')
-
-@app.route('/fileupload', methods=['GET','POST'])
+@app.route('/upload_file', methods=['GET','POST'])
 def upload_file():
     if request.method == 'POST':
         f = request.files['file']
-        f.save("../audio" + secure_filename(f.filename))
-        fileName=spliter.split(f.filename[:-4])
+        fileName=os.path.splitext(f.filename[:-4])
+        fileName=fileName[0]
+        f.save(f'../audio/{fileName}.mp4')
+        allSearch=Search('{fileName}', limit = 1)
+        # global THUMB
+        # THUMB = allSearch.result()['result'][1]
         global STEMS
         STEMS = request.form.get('stems')
+        fileName = spliter.split(fileName,STEMS)
         return redirect(url_for('down', title=fileName))
-
 
 @app.route('/seperate_done/<title>')
 def down(title=None):
@@ -58,6 +62,7 @@ def down(title=None):
 @app.route('/download',  methods=['GET','POST'])
 def download():
     source = request.form["source"]
+    if source == 'MR' : source = 'accompaniment'
     global TITLE
     fileName = TITLE
     file_name = f"../seperated_audio/{fileName}/{source}.wav"

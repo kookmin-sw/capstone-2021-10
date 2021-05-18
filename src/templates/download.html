@@ -57,8 +57,8 @@
         </nav>
     </div>
 
-  
-        
+
+
   {%if stems == "4" %}
   <div class="hero-body">
     <div class="container has-text-centered">
@@ -67,9 +67,9 @@
       </h1>
          <div class="print">
              {% if True %}
-              <img src = "{{thumb}}" , width="400", height="400">
+              <img src = "{{thumb}}" onerror="javascript:src={takeout_neon.png}", width="400", height="400" >
              {% endif %}
-            </br> 
+            </br>
              {{fileName}}
             <h3>Click buttons below to download seperated wav files!</h3>
             <form method="POST" action="/download">
@@ -90,7 +90,7 @@
       </h1>
          <div class="print">
              {% if True %}
-                <img src = "{{thumb}}" , width="400", height="400">
+                <img src = "{{thumb}}" , width="400", height="400", onerror="javascript:src={takeout_neon.png}">
              {% endif %}
              </br>
              {{fileName}}
@@ -111,7 +111,7 @@
         </h1>
            <div class="print">
                {% if True %}
-                <img src = "{{thumb}}" , width="400", height="400">
+                <img src = "{{thumb}}" , width="400", height="400", onerror="javascript:src={takeout_neon.png}">
                {% endif %}
               </br>
                {{fileName}}
@@ -128,14 +128,9 @@
       </div>
     </div>
 {% endif %}
-                 
-          
+
+
   </section>
   <script async="" type="text/javascript" src="../js/bulma.js"></script>
 </body>
 </html>
- 
-
-
-
-

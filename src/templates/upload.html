@@ -42,7 +42,7 @@
                     </span>
                         <span class="navbar-item">
                             <a class="button is-black is-outlined is-rounded" href="#">
-                                <span>community</span>
+                                <span>library</span>
                             </a>
                         </span>
                         <span class="navbar-item">
@@ -62,14 +62,14 @@
         <h1 class="title" style="color: black">
           Music spleeter: Take Out
         </h1>
-          <form method="POST" action="/fileupload"
+          <form method="POST" action="/upload_file"
                 enctype="multipart/form-data">
-          <h3 class="subtitle" style="color: black"> 
+          <h3 class="subtitle" style="color: black">
             upload your file you want to split
           </h3>
           <div class="box">
             <div class="field is-grouped">
-              <p class="select is-rounded is-black"> 
+              <p class="select is-rounded is-black">
                 <select name="stems">
                   <option value="2" >2stem</option>
                   <option value="4"selected="selected">4stem</option>
@@ -78,7 +78,7 @@
               </p>
               <div id="file-js-example" class="file has-name">
                 <label class="file-label">
-                  <input class="file-input" type="file" name="resume">
+                  <input class="file-input" type="file" name="file" value="file" charset="utf-8">
                   <span class="file-cta">
                     <span class="file-icon">
                       <i class="fas fa-upload"></i>
@@ -92,7 +92,7 @@
                   </span>
                 </label>
               </div>
-              
+
               <script>
                 const fileInput = document.querySelector('#file-js-example input[type=file]');
                 fileInput.onchange = () => {
@@ -102,7 +102,7 @@
                   }
                 }
               </script>
-              
+
               <p class="control">
                 <script>
                     function toLoading() {
@@ -116,8 +116,8 @@
             </p>
             </div>
           </div>
-          </form> 
-          <br>    
+          </form>
+          <br>
         </div>
       </div>
     </div>
@@ -126,8 +126,3 @@
   <script async="" type="text/javascript" src="../js/bulma.js"></script>
 </body>
 </html>
- 
-
-
-
-
