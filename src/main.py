@@ -5,7 +5,7 @@ from flask import send_from_directory
 from flask import send_file
 from werkzeug.utils import secure_filename
 from pytube import YouTube
-# from youtubesearchpython import Search
+
 
 app = Flask(__name__)
 
@@ -43,9 +43,6 @@ def upload_file():
         fileName=os.path.splitext(f.filename[:-4])
         fileName=fileName[0]
         f.save(f'../audio/{fileName}.mp4')
-        allSearch=Search('{fileName}', limit = 1)
-        # global THUMB
-        # THUMB = allSearch.result()['result'][1]
         global STEMS
         STEMS = request.form.get('stems')
         fileName = spliter.split(fileName,STEMS)
