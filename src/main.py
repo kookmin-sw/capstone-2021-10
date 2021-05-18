@@ -21,6 +21,18 @@ def inputTest(link=None):
 def upload():
     return render_template('upload.html')
 
+@app.route('/recommendation')
+def recommendation():
+    return render_template('Recommendation.html')
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
+@app.route('/signup')
+def signup():
+    return render_template('signup.html')
+
 @app.route('/getLink', methods=['POST'])
 def getLink(link=None):
     if request.method == 'POST':
@@ -43,6 +55,8 @@ def upload_file():
         fileName=os.path.splitext(f.filename[:-4])
         fileName=fileName[0]
         f.save(f'../audio/{fileName}.mp4')
+        global THUMB
+        THUMB=""
         global STEMS
         STEMS = request.form.get('stems')
         fileName = spliter.split(fileName,STEMS)
