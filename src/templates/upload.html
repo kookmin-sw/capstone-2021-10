@@ -70,7 +70,11 @@
           </h3>
           <div class="box">
             <div class="field is-grouped">
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> e978c7b9f18b464c6be455464288be0ff3a0be2e
               <div id="file-js-example" class="file has-name is-fullwidth">
                 <label class="file-label">
                   <input class="file-input" type="file" name="file" value="file" charset="utf-8" size="200">
@@ -87,6 +91,25 @@
                   </span>
                 </label>
               </div>
+
+              <script>
+                const fileInput = document.querySelector('#file-js-example input[type=file]');
+                fileInput.onchange = () => {
+                  if (fileInput.files.length > 0) {
+                    const fileName = document.querySelector('#file-js-example .file-name');
+                    fileName.textContent = fileInput.files[0].name;
+                  }
+                }
+              </script>
+
+              &nbsp;&nbsp;
+              <p class="select is-rounded is-black">
+                <select name="stems">
+                  <option value="2" >2stem</option>
+                  <option value="4"selected="selected">4stem</option>
+                  <option value="5">5stem</option>
+                </select>
+              </p>
 
               <script>
                 const fileInput = document.querySelector('#file-js-example input[type=file]');
