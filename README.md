@@ -10,11 +10,7 @@
 
 ### 2. Project Introduction
 
-Take + Out = 음악에서 원하는 소리만 포장해가다.
-
-첫 단추부터 잘 끼워야 한다는 말이 있듯이 음악을 처음 연주하는 사람들에게 중요한 것은 '어떤 곡을 연주하느냐' 일 것입니다.
-초보 연주자가 어려운 곡, 난이도가 높은 곡을 선곡하여 연주를 실패했을 때 연습에 들어간 시간과 자신감 하락은 자신의 몫으로 돌아가는데,
-이 프로젝트는 연주자의 실력에 맞는 곡을 추천해주고 보다 성공적인 연주가 될 수 있도록 세션별로 분리된 음원을 제공하는 Web application입니다.
+연주자가 곡을 연습할 때 악보를 구하지 못하는 경우 여러 가지 세션이 섞여있는 음악만 듣고 카피해야 하는 경우가 있습니다. Takeout은 효율적인 곡 Copy를 위해 세션별로 들을 수 있도록 최대 5개의 stem을 제공하고, 수준에 맞는 비슷한 종류의 곡을 추천해 주는 입문자들을 위한 Web application입니다
 
 
 ---
@@ -22,9 +18,7 @@ Take + Out = 음악에서 원하는 소리만 포장해가다.
 
 ### 3. Abstract
 
-Just as there is a saying that you have to play well from the first button, the most important thing for first-time music players is 'what kind of music do you play?'
-When a beginner chooses difficult or difficult songs and fails to perform, the time he starts practicing and his confidence decreases goes to his or her own role.
-This project is a webapplication that recommends songs that suit the performers' abilities and provides sound sources separated by sessions for a more successful performance.
+If a player cannot find the score while practicing, he or she may have to listen to and copy only the music that contains a variety of sessions. Takeout is a web application for beginners who recommend similar songs to suit their level, offering up to five items to listen to in each session for efficient song copying.
 
 
 ---

@@ -11,36 +11,29 @@
 <!-- End Jekyll SEO tag -->
   <body>
     <div class="wrapper">
-      <header>
-        <h1><a href="https://kookmin-sw.github.io/capstone-2021-10/">Takeout</a></h1>
-<p><img src="https://user-images.githubusercontent.com/28581786/113264752-4916fa80-930e-11eb-868d-557c47967550.png" width="600" /></p>
+<p><a href="https://kookmin-sw.github.io/capstone-2021-10/"></a>
+<img src="https://user-images.githubusercontent.com/28581786/113264752-4916fa80-930e-11eb-868d-557c47967550.png" width="600" /></p>
 
 
 <h2 id="1.프로젝트 소개">1. 프로젝트소개</h2>
 <p>
 Take + Out = 음악에서 원하는 소리만 포장해가다.
 <br>
-첫 단추부터 잘 끼워야 한다는 말이 있듯이 음악을 처음 연주하는 사람들에게 중요한 것은 '어떤 곡을 연주하느냐' 일 것입니다.
-초보 연주자가 어려운 곡, 난이도가 높은 곡을 선곡하여 연주를 실패했을 때 연습에 들어간 시간과 자신감 하락은 자신의 몫으로 돌아가는데,
-이 프로젝트는 연주자의 실력에 맞는 곡을 추천해주고 보다 성공적인 연주가 될 수 있도록 세션별로 분리된 음원을 제공하는 Web application입니다.</p>
+연주자가 곡을 연습할 때 악보를 구하지 못하는 경우 여러 가지 세션이 섞여있는 음악만 듣고 카피해야 하는 경우가 있습니다. Takeout은 효율적인 곡 Copy를 위해 세션별로 들을 수 있도록 최대 5개의 stem을 제공하고, 수준에 맞는 비슷한 종류의 곡을 추천해 주는 입문자들을 위한 Web application입니다.</p>
 
 
 <h2 id="2.abstract">2. Abstract</h2>
-<p>Just as there is a saying that you have to play well from the first button,
-the most important thing for first-time music players is 'what kind of music do you play?' When a beginner chooses difficult or difficult songs and fails to perform,
-the time he starts practicing and his confidence decreases goes to his or her own role.
-This project is a webapplication that recommends songs that suit the performers' abilities and
-provides sound sources separated by sessions for a more successful performance.</p>
+<p>If a player cannot find the score while practicing, he or she may have to listen to and copy only the music that contains a variety of sessions. Takeout is a web application for beginners who recommend similar songs to suit their level, offering up to five items to listen to in each session for efficient song copying.</p>
 
 
 <h2 id="3.Members">3. Members</h2>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 
- - 김초혜
+ - 이효성
 
-   Student ID : 20163102
-   E-mail : inakplace6666@gmail.com
-   Role :
+   Student ID : 20153218
+   E-mail : lho2046@gmail.com
+   Role : 
 
 
  - 유정현
@@ -49,6 +42,11 @@ provides sound sources separated by sessions for a more successful performance.<
    E-mail : dbwjdgus0@kookmin.ac.kr
    Role :
 
+ - 김초혜
+
+   Student ID : 20163102
+   E-mail : inakplace6666@gmail.com
+   Role :
 
  - 이윤서
 
@@ -57,11 +55,7 @@ provides sound sources separated by sessions for a more successful performance.<
    Role :
 
 
- - 이효성
 
-   Student ID : 20153218
-   E-mail : lho2046@gmail.com
-   Role :
 
 </code></pre></div></div>
 
