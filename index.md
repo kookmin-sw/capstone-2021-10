@@ -1,12 +1,18 @@
 <!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Takeout" />
+<meta property="og:title" content="Take_out" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Takeout - 초보 연주자를 위한 음원 추출, 음악 추천 프로그램" />
 <meta property="og:description" content="Takeout - 초보 연주자를 위한 음원 추출, 음악 추천 프로그램" />
 <link rel="canonical" href="https://kookmin-sw.github.io/capstone-2021-10/" />
-<meta property="og:url" content="https://kookmin-sw.github.io/capstone-2021-10/" />
-<meta property="og:site_name" content="capstone-2021-10" />
+<!-- <meta property="og:url" content="https://kookmin-sw.github.io/capstone-2021-10/" /> -->
+<meta property="og:site_name" content="Take_out" />
+<meta property="og:imgae" content="https://github.com/kookmin-sw/capstone-2021-10/blob/master/src/templates/takeout_green.png?raw=true">
+<meta property="og:image:width" content="200" />
+<meta property="og:image:height" content="200" />
+
+
+출처: https://nowonbun.tistory.com/517 [명월 일지]
 
 <!-- End Jekyll SEO tag -->
   <body>
