@@ -12,8 +12,6 @@
 <meta property="og:image:height" content="200" />
 
 
-출처: https://nowonbun.tistory.com/517 [명월 일지]
-
 <!-- End Jekyll SEO tag -->
   <body>
     <div class="wrapper">
