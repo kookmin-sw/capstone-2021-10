@@ -1,6 +1,6 @@
 ### 1. Takeout
 
-<img width="387" alt="KakaoTalk_Photo_2021-04-01-04-06-38" src="https://user-images.githubusercontent.com/28581786/113264752-4916fa80-930e-11eb-868d-557c47967550.png">
+<img width="387" alt="bener" src="https://user-images.githubusercontent.com/28581786/113264752-4916fa80-930e-11eb-868d-557c47967550.png">
 
 **팀페이지 주소** https://kookmin-sw.github.io/capstone-2021-10/
 
