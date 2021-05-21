@@ -7,10 +7,6 @@
 <link rel="canonical" href="https://kookmin-sw.github.io/capstone-2021-10/" />
 <!-- <meta property="og:url" content="https://kookmin-sw.github.io/capstone-2021-10/" /> -->
 <meta property="og:site_name" content="Take_out" />
-<meta property="og:imgae" content="https://github.com/kookmin-sw/capstone-2021-10/blob/master/src/templates/takeout_green.png?raw=true">
-<meta property="og:image:width" content="200" />
-<meta property="og:image:height" content="200" />
-
 
 <!-- End Jekyll SEO tag -->
   <body>
@@ -18,10 +14,6 @@
       <header>
         <h1><a href="https://kookmin-sw.github.io/capstone-2021-10/">Takeout</a></h1>
 <p><img src="https://user-images.githubusercontent.com/28581786/113264752-4916fa80-930e-11eb-868d-557c47967550.png" width="600" /></p>
-
-<h3 id="팀페이지-주소">팀페이지 주소</h3>
-https://kookmin-sw.github.io/capstone-2021-10/
-
 
 
 <h2 id="1.프로젝트 소개">1. 프로젝트소개</h2>
