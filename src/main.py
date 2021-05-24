@@ -1,4 +1,5 @@
-import spliter, os
+import spliter, mfcc_ext, knn_recommend
+import os
 import time
 from flask import Flask, render_template, redirect, request, url_for
 from flask import send_from_directory
@@ -23,7 +24,16 @@ def upload():
 
 @app.route('/recommendation')
 def recommendation():
-    return render_template('Recommendation.html')
+    global TITLE
+    fileName = TITLE
+    sessions = ['drums', 'bass', 'piano', 'other']
+    mfcc = mfcc_ext.getMfcc(f"../seperated_audio/{fileName}")
+
+    reco = []
+    for i, sess in enumerate(sessions):
+        reco.append(knn_recommend.get_recommend(sess, mfcc[i], fileName))
+    #print(reco)
+    return render_template('Recommendation.html', fileName = fileName, reco = reco)
 
 @app.route('/login')
 def login():
@@ -43,7 +53,7 @@ def getLink(link=None):
         THUMB= yt.thumbnail_url
         global STEMS
         STEMS = request.form.get('stems')
-        fileName = spliter.split(yt.title,STEMS)
+        fileName = spliter.split(yt.title)
     else:
         temp = None
     return redirect(url_for('down', title=fileName))
@@ -59,7 +69,7 @@ def upload_file():
         THUMB=""
         global STEMS
         STEMS = request.form.get('stems')
-        fileName = spliter.split(fileName,STEMS)
+        fileName = spliter.split(fileName)
         return redirect(url_for('down', title=fileName))
 
 @app.route('/seperate_done/<title>')

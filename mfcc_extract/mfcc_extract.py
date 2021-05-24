@@ -14,13 +14,10 @@ for file in tqdm(files):
 
     sig, sr = librosa.load(file_path, sr= None)
 
-    size = int(len(sig) / sr) + 1
 
-    frame_stride = size / 200
-    frame_length = frame_stride * 1.5
-
-    n_fft = int(round(sr*frame_length))
-    hop_length = int(round(sr*frame_stride))
+    hop_length = len(sig)//199
+    n_fft = int(round(hop_length * 1.5))
+    
     MFCCs = librosa.feature.mfcc(sig, sr, n_fft = n_fft,hop_length=hop_length, n_mfcc=10)
     if MFCCs.shape[1] != 200: continue
     
