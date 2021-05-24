@@ -1,4 +1,4 @@
-import spliter, mfcc_ext, knn_recommend
+import spliter, mfcc_ext, knn_recommend, yt_search
 import os
 import time
 from flask import Flask, render_template, redirect, request, url_for
@@ -28,12 +28,19 @@ def recommendation():
     fileName = TITLE
     sessions = ['drums', 'bass', 'piano', 'other']
     mfcc = mfcc_ext.getMfcc(f"../seperated_audio/{fileName}")
-
+    titles = [ t.strip() for t in open("titles.txt", "r")]
     reco = []
+    print(len(titles))
     for i, sess in enumerate(sessions):
-        reco.append(knn_recommend.get_recommend(sess, mfcc[i], fileName))
+        reco.append(knn_recommend.get_recommend(sess, mfcc[i], fileName, titles))
+
+    # with open("titles.txt", "a") as t:
+    #     t.write(f"{fileName}\n")
+    #     t.close()
     #print(reco)
-    return render_template('Recommendation.html', fileName = fileName, reco = reco)
+    thumb_urls, video_urls = yt_search.get_thumbs(reco)
+    print(thumb_urls)
+    return render_template('Recommendation.html', fileName = fileName, reco = reco, thumb_urls=thumb_urls, video_urls= video_urls)
 
 @app.route('/login')
 def login():
