@@ -8,7 +8,7 @@ def get_thumbs(items):
     thumb_urls = []
     video_urls = []
 
-    DEVELOPER_KEY = "AIzaSyAZh2lfylOP4FCBsAhAgbSwvx1Q17QVJ5I"
+    DEVELOPER_KEY = ""
     YOUTUBE_API_SERVICE_NAME="youtube"
     YOUTUBE_API_VERSION="v3"
     youtube = build(YOUTUBE_API_SERVICE_NAME,YOUTUBE_API_VERSION,developerKey=DEVELOPER_KEY)
