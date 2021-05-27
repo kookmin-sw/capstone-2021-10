@@ -72,7 +72,7 @@ Role : Frontend,Data Collection
 
 실행이 완료되면 해당 사진처럼 결과가 출력되는데
 <br><br>
-사용자는 원하는 악기를 선택하여 다운로드 하면 된다.<br>
+사용자는 원하는 악기를 선택하여 다운로드 하면 됩니다.<br>
 
 ## 2. 음원 파일을 사용하는 방법
 <img width="800" src="https://github.com/kookmin-sw/capstone-2021-10/blob/master/UIUX/upload2.png?raw=true"><br>
@@ -84,18 +84,18 @@ Role : Frontend,Data Collection
 
 실행이 완료되면 해당 사진처럼 결과가 출력되는데<br>
 <br>
-사용자는 원하는 악기를 선택하여 다운로드 하면 된다.<br>
+사용자는 원하는 악기를 선택하여 다운로드 하면 됩니다.<br>
 
 ## 3. 추천시스템 이용 방법
 <img width="800" src="https://github.com/kookmin-sw/capstone-2021-10/blob/master/UIUX/youtubelink_result.png?raw=true"><br>
 <img width="800" src="https://github.com/kookmin-sw/capstone-2021-10/blob/master/UIUX/upload_result.png?raw=true"><br>
 
-위에 사진처럼 작업을 완료한 후 Recommendation 버튼을 누르면 아래 사진처럼 추천 결과 창으로 이동하게 된다.<br>
+위에 사진처럼 작업을 완료한 후 Recommendation 버튼을 누르면 아래 사진처럼 추천 결과 창으로 이동하게 됩니다.<br>
 
 
 <img width="800"src="https://github.com/kookmin-sw/capstone-2021-10/blob/master/UIUX/recommendation.png?raw=true"><br>
 <br>
-썸네일 아래에 Youtube 링크를 클릭하면 해당 음악의 youtube 페이지로 이동하게 된다.<br>
+썸네일 아래에 Youtube 링크를 클릭하면 해당 음악의 youtube 페이지로 이동하게 됩니다.<br>
 ---
 
 ### 4. Data Flow Diagram
