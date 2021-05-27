@@ -65,38 +65,36 @@ Take + Out = 음악에서 원하는 소리만 포장해가다.
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 
-<img width="800" src="https://github.com/kookmin-sw/capstone-2021-10/blob/master/UIUX/youtubelink.png?raw=true"><br>
+<h3>1. youtube 링크를 이용한 사용법<br></h3>
+<img width="800" src="https://github.com/kookmin-sw/capstone-2021-10/blob/master/UIUX/youtubelink.png?raw=true"width="800"><br>
 1. 원하는 음악의 링크를 가져와서 붙여넣기 합니다.<br>
 2. 오른쪽에 Stem 옵션 중 원하는 옵션을 클릭합니다.(2/4/5)<br>
 3. Order 버튼을 클릭하여 실행시킵니다.<br>
 
-<img width="800" src="https://github.com/kookmin-sw/capstone-2021-10/blob/master/UIUX/youtubelink_result.png?raw=true"><br>
+<img width="800" src="https://github.com/kookmin-sw/capstone-2021-10/blob/master/UIUX/youtubelink_result.png?raw=true"width="800"><br>
 
-실행이 완료되면 해당 사진처럼 결과가 출력되는데
-<br><br>
+실행이 완료되면 해당 사진처럼 결과가 출력되는데<br>
 사용자는 원하는 악기를 선택하여 다운로드 하면 됩니다.<br>
 
-## 2. 음원 파일을 사용하는 방법
-<img width="800" src="https://github.com/kookmin-sw/capstone-2021-10/blob/master/UIUX/upload2.png?raw=true"><br>
+<h3>2. 음원 파일을 사용하는 방법</h3>
+<img width="800" src="https://github.com/kookmin-sw/capstone-2021-10/blob/master/UIUX/upload2.png?raw=true"width="800"><br>
 1. choose a file 버튼을 클릭하여 사용자가 파일을 서버에 업로드 합니다.<br>
 2. 오른쪽 Stem 옵션 중 원하는 옵션을 클릭합니다.(2/4/5)<br>
 3. Order 버튼을 클릭하여 실행시킵니다.<br>
 
-<img width="800" src="https://github.com/kookmin-sw/capstone-2021-10/blob/master/UIUX/upload_result.png?raw=true"><br>
+<img width="800" src="https://github.com/kookmin-sw/capstone-2021-10/blob/master/UIUX/upload_result.png?raw=true"width="800"><br>
 
 실행이 완료되면 해당 사진처럼 결과가 출력되는데<br>
-<br>
 사용자는 원하는 악기를 선택하여 다운로드 하면 됩니다.<br>
 
-## 3. 추천시스템 이용 방법
-<img width="800" src="https://github.com/kookmin-sw/capstone-2021-10/blob/master/UIUX/youtubelink_result.png?raw=true"><br>
-<img width="800" src="https://github.com/kookmin-sw/capstone-2021-10/blob/master/UIUX/upload_result.png?raw=true"><br>
+<h3>3. 추천시스템 이용 방법</h3>
+<img width="800" height="600" src="https://github.com/kookmin-sw/capstone-2021-10/blob/master/UIUX/youtubelink_result.png?raw=true"width="800"><br>
+<img width="800" height="600" src="https://github.com/kookmin-sw/capstone-2021-10/blob/master/UIUX/upload_result.png?raw=true"width="800"><br>
 
 위에 사진처럼 작업을 완료한 후 Recommendation 버튼을 누르면 아래 사진처럼 추천 결과 창으로 이동하게 됩니다.<br>
 
+<p><img width="800" src="https://github.com/kookmin-sw/capstone-2021-10/blob/master/UIUX/recommendation.png?raw=true"></p>
 
-<img width="800"src="https://github.com/kookmin-sw/capstone-2021-10/blob/master/UIUX/recommendation.png?raw=true"><br>
-<br>
 썸네일 아래에 Youtube 링크를 클릭하면 해당 음악의 youtube 페이지로 이동하게 됩니다.<br>
 </code></pre></div></div>
 
